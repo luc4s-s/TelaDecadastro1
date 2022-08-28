@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+ 
+ 	<!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<!-- link css -->
+	<link href="css/index.css" rel="stylesheet">
+
+<title>Tela de Cadastroo</title>
+</head>
+
+  <body>
+ 
+    <div class="Flinkedin">
+    <a href="https://www.linkedin.com/in/lucasgomes0/" target="_blank" >
+    <img  src="imagens/linkedin.png" alt=linkedin height="40px"/> 
+    </a>
+    </div>
+    
+    <div class="Fgithub">
+    <a href="https://github.com/luc4s-s" target="_blank" >
+    <img  src="imagens/github.png" alt="github" height="40px" />
+    </a>
+    </div>
+
+  
+  
+    <!-- Formulario principal -->
+  <form action="" id="formCadastroUser">
+  
+  
+  <h1 >Cadastre-se</h1>
+    <hr style="color: blue;" />
+    <br/> 
+  
+  <div class="mb-3">
+  <label for="id" class="form-label">ID</label>
+  <input type="text" class="form-control" id="id" readonly="readonly">
+</div><br />
+
+
+
+<h5>Dados</h5>
+<hr style="color: blue;" />
+<div class="mb-3">
+  <label for="nome" class="form-label">Nome do usuario *</label>
+  <input type="text" class="form-control" id="nome" name="name" placeholder="Informe o Nome" required="required" style="color: red" >
+</div>
+
+<!-- <div class="mb-3">
+  <label for=cargo class="form-label">Nivel *</label>
+  <select class="browser-default" th:field="*{sexopessoa}">
+					    <option value="" >--[selecione]--</option>					
+						<option value="MASCULINO" th:text="Masculino"/>
+						<option value="FEMENINO"  th:text="Femenino"/>
+					</select>
+  <input type="text" class="form-control" id="cargo" placeholder="Informe a Cargo" required="required" style="color: red" >
+</div> -->
+
+
+
+
+<div class="row g-2">
+
+ <div class="col-md-4">
+    <label for="nivel" class="form-label">Nivel</label>
+    <select id="nivel" class="form-select" required="required" style="color: red">
+      <option value="" disabled selected>--[selecione]--</option>
+      <option>Junior</option>
+      <option>Pleno</option>
+      <option>Sênior</option>
+    </select>
+  </div>
+  
+  <div class="col-md-4">
+    <label for="experiencia" class="form-label">Experiência</label>
+    <select id="experiencia" class="form-select" required="required" style="color: red">
+      <option value="" disabled selected>--[selecione]--</option>
+      <option>1 a 2 Anos</option>
+      <option>Mas de 3 anos de Experiência</option>
+    </select>
+  </div>
+  
+  <div class="col-md-4">
+    <label for="formacao" class="form-label">Formação</label>
+    <select id="formacao" class="form-select" required="required" style="color: red">
+      <option value="" disabled selected>--[selecione]--</option>
+      <option >Ensino Medio</option>
+      <option>Superio Completo</option>
+      <option>Superio Cursando</option>
+      <option>Superio Incompleto</option>
+      <option>Mestrado</option>
+      <option>Doutorado</option>
+      
+    </select>
+  </div>
+</div><br/>
+
+
+
+<div class="mb-3">
+  <label for="idade" class="form-label">Idade *</label>
+  <input type="number" class="form-control" id="idade" placeholder="Informe a Idade" required="required" style="color: red">
+</div>
+
+
+ <div class="col-md-4">
+    <label for="formacao" class="form-label">Genero</label>
+    <select id="formacao" class="form-select" required="required" style="color: red">
+      <option value="" disabled selected>--[selecione]--</option>
+      <option >Masculino</option>
+      <option>Femenino</option>
+    </select>
+  </div><br/>
+
+<div class="mb-3">
+  <label for="salario" class="form-label">Salario *</label>
+  <input type="number" class="form-control" id="salario" placeholder="Informe o salario" required="required" style="color: red">
+</div>
+
+<div class="mb-3">
+  <label for="curriculo" class="form-label">Curriculo *</label>
+  <input type="file" class="form-control" id="curriculo" placeholder="" required="required" style="color: red">
+</div><br/>
+
+		<div>
+		<label >Você é pessoa com deficiência?</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="flexRadioDefault"id="####">
+			<label class="form-check-label" for="###">Sim </label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="flexRadioDefault"id="####" checked> <label class="form-check-label"for="#####">Não</label>
+		</div><br/>
+		
+		
+		<div>
+		<label>Estou ciente que ao marcar a opção de consentimento no final
+		da página, poderei receber contato para outras oportunidades futuras
+		dentro do meu perfil.*</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="flexRadio"id="####">
+			<label class="form-check-label" for="###">Sim </label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="flexRadio"id="####" checked> <label class="form-check-label"for="#####"> Prefiro NÃO receber oportunidades futuras dentro do meu perfil </label>
+		</div><br/>
+
+		<br/> 
+
+
+
+<h5>Contato</h5>
+<hr style="color: blue;" />
+
+<div class="mb-3">
+  <label for="email" class="form-label">Email *</label>
+  <input type="email" class="form-control" id="email" placeholder="exemplo@gmail.com" required="required" style="color: red">
+</div>
+
+<div class="mb-3">
+  <label for="rede_social" class="form-label">Rede Social *</label>
+  <input type="text" class="form-control" id="rede_social" placeholder="www.linkedin.com/in/exemplo/" required="required" style="color: red">
+</div>
+
+
+		<!-- BUTOES DO FORM -->
+<button type="button" class="btn btn-outline-primary" onclick="salvarUsuario()">ENVIAR INSCRIÇÃO</button>
+<button type="button" class="btn btn-outline-secondary" onclick="document.getElementById('formCadastroUser').reset();">Novo</button>
+
+  </form>
+  <br />
+  <hr />
+
+
+        <!-- faz a interaçao com o butao salvar -->
+        <script type="text/javascript" >
+        
+        
+        
+        //FUNCAO PARA SALVAR
+          function salvarUsuario(){       	
+        	  var id = $("#id").val();
+        	  var nome = $("#nome").val();
+        	  var nivel = $("#nivel").val();
+        	  var experiencia = $("#experiencia").val(); 
+        	  var formacao = $("#formacao").val(); 
+        	  var idade = $("#idade").val();  
+        	  var salario = $("#salario").val();  
+        	  var email = $("#email").val();  
+        	  var rede_social = $("#rede_social").val();  
+        	  
+        	  //validadndo nome e idade 
+        	  if(nome == null || nome!= null && nome.trim() == ''){
+        		  $("#nome").focus();
+        		  alert('Informe o Nome ( :');
+        		  return;
+        	  }        	  
+        	  if(nivel == null || nivel!= null && nivel.trim() == ''){
+        		  $("#nivel").focus();
+        		  alert('Informe o Nivel ( :');
+        		  return;
+        	  }
+        	  if(experiencia == null || experiencia!= null && experiencia.trim() == ''){
+        		  $("#experiencia").focus();
+        		  alert('Informe a sua Experiência ( :');
+        		  return;
+        	  }
+        	  if(formacao == null || formacao!= null && formacao.trim() == ''){
+        		  $("#formacao").focus();
+        		  alert('Informe a Formação ( :');
+        		  return;
+        	  }
+        	  if(idade == null || idade!= null && idade.trim() == ''){
+        		  $("#idade").focus();
+        		  alert('Informe a Idade ( :');
+        		  return;
+        	  }
+        	  if(salario == null || salario!= null && salario.trim() == ''){
+        		  $("#salario").focus();
+        		  alert('Informe o Salario( :');
+        		  return;
+        	  }
+        	  if(email == null || email!= null && email.trim() == ''){
+        		  $("#email").focus();
+        		  alert('Informe o Email( :');
+        		  return;
+        	  }
+        	  if(rede_social == null || rede_social!= null && rede_social.trim() == ''){
+        		  $("#rede_social").focus();
+        		  alert('Informe a sua o Link Rede Social( :');
+        		  return;
+        	  }
+        	  
+        	  $.ajax({  //chamando o salvar
+        		  method: "POST",
+        		  url: "salvar",
+        		  data: JSON.stringify({id:id, nome:nome, nivel:nivel, experiencia:experiencia, formacao:formacao, idade:idade, salario:salario, email:email, rede_social}),
+        		  contentType: "application/json; charset=utf-8",
+        		  success: function (response){
+        			  
+        			  $("#id").val(response.id);
+        			  alert("Salvo Com Sucesso! ( :");
+        		  }
+        	  }).fail(function(xhr, status, errorThrown){
+        		  alert("Erro ao Salvar: " + xhr.responsetext);
+        	  });
+          }
+        </script>
+	
+	
+	
+	
+	<!-- jquery instalado -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
